@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OnDeliverFormContext" prefHeight="574.0" prefWidth="920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OnDeliveryFormController">
+   <children>
+      <Label prefHeight="61.0" prefWidth="920.0" style="-fx-background-color: #bdc3c7;" text="  Parking System">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbOnDelivery" layoutX="73.0" layoutY="114.0" onAction="#InParkingOnAction" prefHeight="31.0" prefWidth="215.0" promptText="On Delivery" style="-fx-background-color: #bdc3c7;" />
+      <JFXButton buttonType="RAISED" layoutX="511.0" layoutY="105.0" onAction="#AddVehicleOnAction" prefHeight="40.0" prefWidth="157.0" style="-fx-background-color: #2ecc71;" text="Add Vehical" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="700.0" layoutY="105.0" onAction="#AddDriverOnAction" prefHeight="40.0" prefWidth="157.0" style="-fx-background-color: #2ecc71;" text="Add Driver" textFill="WHITE" />
+      <TableView fx:id="tblOnDeliveryTable" layoutX="46.0" layoutY="186.0" prefHeight="354.0" prefWidth="820.0">
+        <columns>
+          <TableColumn fx:id="colvehiNum2" prefWidth="198.0" text="Vehicle Number" />
+          <TableColumn fx:id="ColvehiType2" prefWidth="195.0" text="Vehicle Type" />
+            <TableColumn fx:id="coldName" prefWidth="210.0" text="Driver Name" />
+            <TableColumn fx:id="colleftTime" prefWidth="216.0" text="Left Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
